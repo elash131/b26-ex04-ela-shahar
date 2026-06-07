@@ -12,7 +12,7 @@ namespace Ex04.Menus.Events
 
 		public override void Show()
 		{
-			if (HasSubItems == false)
+			if(!HasSubItems)
 			{
 				showLeafAction();
 			}

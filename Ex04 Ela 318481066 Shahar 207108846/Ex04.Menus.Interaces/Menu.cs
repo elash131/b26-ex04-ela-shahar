@@ -1,7 +1,7 @@
 using System;
 using System.Collections.Generic;
 
-namespace Ex04.Menus.Events
+namespace Ex04.Menus.Interfaces
 {
 	public abstract class Menu
 	{
@@ -94,7 +94,7 @@ namespace Ex04.Menus.Events
 
 		private void printItemList()
 		{
-			for (int i = 0; i < r_Items.Count; i++)
+			for(int i = 0; i < r_Items.Count; i++)
 			{
 				Console.WriteLine("{0}. {1}", i + 1, r_Items[i].Name);
 			}
