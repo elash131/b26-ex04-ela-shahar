@@ -4,9 +4,9 @@ namespace Ex04.Menus.Events
 {
 	public class MenuItem : Menu
 	{
-		public event EventHandler Selected;
+		public event Action Selected;
 
-		public MenuItem(string i_Name) : base(i_Name)
+		public MenuItem(string i_Title) : base(i_Title)
 		{
 		}
 
@@ -24,11 +24,8 @@ namespace Ex04.Menus.Events
 
 		protected virtual void OnSelected()
 		{
-			if (Selected != null)
-			{
-				Selected.Invoke(this, EventArgs.Empty);
-			}
-		}
+            Selected?.Invoke();
+        }
 
 		private void showLeafAction()
 		{

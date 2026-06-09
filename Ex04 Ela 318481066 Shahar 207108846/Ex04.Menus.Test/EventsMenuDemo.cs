@@ -47,17 +47,17 @@ namespace Ex04.Menus.Test
 			return mainMenu;
 		}
 
-		private void showCurrentDateItem_Selected(object sender, EventArgs e)
+		private void showCurrentDateItem_Selected()
 		{
 			Console.WriteLine("> Current Date is {0}", DateTime.Now.ToString("dd/MM/yyyy"));
 		}
 
-		private void showCurrentTimeItem_Selected(object sender, EventArgs e)
+		private void showCurrentTimeItem_Selected()
 		{
 			Console.WriteLine("> Current Time is {0}", DateTime.Now.ToString("HH:mm:ss"));
 		}
 
-		private void countCapitalsItem_Selected(object sender, EventArgs e)
+		private void countCapitalsItem_Selected()
 		{
 			int count = 0;
 			string input;
@@ -75,7 +75,7 @@ namespace Ex04.Menus.Test
 			Console.WriteLine("> There are {0} uppercase letters in your text", count);
 		}
 
-		private void showVersionItem_Selected(object sender, EventArgs e)
+		private void showVersionItem_Selected()
 		{
 			Console.WriteLine("App Version: 26.2.4.7310");
 		}
