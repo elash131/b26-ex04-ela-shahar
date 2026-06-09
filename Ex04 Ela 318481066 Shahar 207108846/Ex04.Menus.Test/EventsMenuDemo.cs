@@ -1,4 +1,3 @@
-using System;
 using Ex04.Menus.Events;
 
 namespace Ex04.Menus.Test
@@ -22,25 +21,21 @@ namespace Ex04.Menus.Test
 		private MainMenu buildMenu()
 		{
 			MainMenu mainMenu = new MainMenu("Delegates Main Menu");
-
 			MenuItem dateTimeItem = new MenuItem("Show Current Date/Time");
 			MenuItem showCurrentDateItem = new MenuItem("Show Current Date");
 			MenuItem showCurrentTimeItem = new MenuItem("Show Current Time");
+            MenuItem versionCapitalsItem = new MenuItem("Version and Capitals");
+            MenuItem countCapitalsItem = new MenuItem("Count Capitals");
+            MenuItem showVersionItem = new MenuItem("Show Version");
 
-			showCurrentDateItem.Selected += showCurrentDateItem_Selected;
+            showCurrentDateItem.Selected += showCurrentDateItem_Selected;
 			showCurrentTimeItem.Selected += showCurrentTimeItem_Selected;
 			dateTimeItem.AddMenuItem(showCurrentDateItem);
 			dateTimeItem.AddMenuItem(showCurrentTimeItem);
-
-			MenuItem versionCapitalsItem = new MenuItem("Version and Capitals");
-			MenuItem countCapitalsItem = new MenuItem("Count Capitals");
-			MenuItem showVersionItem = new MenuItem("Show Version");
-
 			countCapitalsItem.Selected += countCapitalsItem_Selected;
 			showVersionItem.Selected += showVersionItem_Selected;
 			versionCapitalsItem.AddMenuItem(countCapitalsItem);
 			versionCapitalsItem.AddMenuItem(showVersionItem);
-
 			mainMenu.AddMenuItem(dateTimeItem);
 			mainMenu.AddMenuItem(versionCapitalsItem);
 
@@ -49,35 +44,22 @@ namespace Ex04.Menus.Test
 
 		private void showCurrentDateItem_Selected()
 		{
-			Console.WriteLine("> Current Date is {0}", DateTime.Now.ToString("dd/MM/yyyy"));
+			TestActions.ShowCurrentDate();
 		}
 
 		private void showCurrentTimeItem_Selected()
 		{
-			Console.WriteLine("> Current Time is {0}", DateTime.Now.ToString("HH:mm:ss"));
+			TestActions.ShowCurrentTime();
 		}
 
 		private void countCapitalsItem_Selected()
 		{
-			int count = 0;
-			string input;
-
-			Console.Write("Enter a sentence: ");
-			input = Console.ReadLine();
-			foreach(char c in input)
-			{
-				if(char.IsUpper(c))
-				{
-					count++;
-				}
-			}
-
-			Console.WriteLine("> There are {0} uppercase letters in your text", count);
+			TestActions.CountCapitals();
 		}
 
 		private void showVersionItem_Selected()
 		{
-			Console.WriteLine("App Version: 26.2.4.7310");
+			TestActions.ShowVersion();
 		}
 	}
 }
