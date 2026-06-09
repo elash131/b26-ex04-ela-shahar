@@ -43,10 +43,14 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CountCapitalsAction.cs" />
     <Compile Include="EventsMenuDemo.cs" />
     <Compile Include="InterfacesMenuDemo.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ShowCurrentDateAction.cs" />
+    <Compile Include="ShowCurrentTimeAction.cs" />
+    <Compile Include="ShowVersionAction.cs" />
     <Compile Include="TestActions.cs" />
   </ItemGroup>
   <ItemGroup>
