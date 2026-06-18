@@ -5,7 +5,7 @@ VisualStudioVersion = 18.4.11612.150
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ex04.Menus.Test", "Ex04.Menus.Test\Ex04.Menus.Test.csproj", "{F8A88D50-1250-46F8-BA7F-89E055AAFE2E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ex04.Menus.Interaces", "Ex04.Menus.Interaces\Ex04.Menus.Interaces.csproj", "{C38476B2-C12B-4DC5-85A6-38C1C6FD6CCC}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ex04.Menus.Interfaces", "Ex04.Menus.Interfaces\Ex04.Menus.Interfaces.csproj", "{C38476B2-C12B-4DC5-85A6-38C1C6FD6CCC}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ex04.Menus.Events", "Ex04.Menus.Events\Ex04.Menus.Events.csproj", "{86BC2DAE-AE11-4181-994F-F81C45AA3381}"
 EndProject

@@ -1,7 +1,7 @@
 using System;
 using System.Collections.Generic;
 
-namespace Ex04.Menus.Events
+namespace Ex04.Menus.Interfaces
 {
 	public abstract class Menu
 	{
@@ -110,7 +110,7 @@ namespace Ex04.Menus.Events
 			string input = Console.ReadLine();
 			bool isValidInteger = int.TryParse(input, out o_UserChoice);
 
-            return  isValidInteger && o_UserChoice >= 0 && o_UserChoice <= r_Items.Count;
+            return isValidInteger && o_UserChoice >= 0 && o_UserChoice <= r_Items.Count;
 		}
 	}
 }
